@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#home {
+    background-image: url("/homeImage/background-home-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+
+
+.radius {
+    height: 250px;
+    border-radius: 100%;
+    width: 250px;
+}
+
+
+
+
+
+@media only screen and (max-width:769px) {
+
+    .radius {
+        height: 80%;
+        border-radius: 70%;
+        width: 180px;
+        background-color: aquamarine;
+    }
+
+
+    .radius-con {
+        height: 200px;
+    }
+
+}

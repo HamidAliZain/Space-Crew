@@ -15,48 +15,82 @@
         <div class="bg-white rounded-full">
           <img src="./images/logo.svg" alt="logo" />
         </div>
-        <div class="w-1/2 h-2 hidden bg-slate-700 md:block"></div>
+        <div class="w-1/2 h-1 hidden bg-gray-800 md:block"></div>
         <div
-          class="hidden text-md justify-around bg-blue-400 text-white w-1/2 py-6 md:text-sm md:flex"
+          class="hidden text-md justify-around backdrop-blur-2xl text-white w-1/2 py-8 md:text-sm md:flex md:flex-row"
         >
-          <a href="#">00 Home</a>
-          <a href="#">01 Destination</a>
-          <a href="#">02 Crew</a>
-          <a href="#">03 Technology</a>
+          <a href="./index.html"><span class="font-bold"> 00</span> Home</a>
+          <a href="./destination.html"
+            ><span class="font-bold"> 01</span> Destination</a
+          >
+          <a href="#"><span class="font-bold"> 02</span> Crew</a>
+          <a href="#"><span class="font-bold"> 03</span> Technology</a>
         </div>
+        <img
+          src="./images/icon-hamburger.svg"
+          alt="icon-hamburger"
+          class="block md:hidden"
+          id="hamburger"
+        />
       </nav>
     </header>
-    <section id="home">
-      <div class="flex flex-col justify-center h-screen">
-        <div
-          class="flex flex-col justify-between items-center mt-16 md:items-stretch md:flex-row"
-        >
-          <div
-            class="text-white w-full font-bold py-0 text-center md:text-left p md:w-1/2"
-          >
-            <div class="text-white w-full mx-auto md:max-w-sm">
-              <h1 class="text-xl mt-1">SO YOU WANT TAVEL TO</h1>
-              <h2 class="text-8xl my-4 ml-2">SPACE</h2>
-              <p class="mt-4 text-sm md:text-lg">
-                Let`s face it; if you want to go to space, you might as well
-                genuinely go to outer space and not hover kind of on the edge of
-                it. Well sit back, and relax because we`ll give you a truly out
-                of this world experience!
-              </p>
-            </div>
-          </div>
-          <div
-            class="w-full flex flex-col items-center justify-center radius-con md:items-stretch md:w-1/2"
-          >
-            <a
-              href="#"
-              class="radius mt-0 ml-0 bg-white flex flex-col items-center justify-center md:my-12 px-4 md:ml-20"
+    <main>
+      <section id="home">
+        <div class="sidenav backdrop-blur-3xl" id="open">
+          <img
+            src="./images/icon-close.svg"
+            alt="closeHamburger"
+            id="closeHamburger"
+            class="close w-12 top-5 absolute right-12"
+          />
+          <div class="flex flex-col px-4 py-5 space-y-12 text-white">
+            <a href="./index.html"><span class="font-bold"> 00</span> Home</a>
+            <a href="./destination.html"
+              ><span class="font-bold"> 01</span> Destination</a
             >
-              <h1 class="text-2xl">Explore</h1>
-            </a>
+            <a href="#"><span class="font-bold"> 02</span> Crew</a>
+            <a href="#"><span class="font-bold"> 03</span> Technology</a>
           </div>
         </div>
-      </div>
-    </section>
+
+        <div class="flex flex-col md:justify-center h-full md:h-screen">
+          <div
+            class="flex flex-col justify-between items-center mt-16 md:items-stretch md:flex-row"
+          >
+            <div
+              class="text-white w-full py-0 text-center md:text-left p md:w-1/2"
+            >
+              <div class="text-white w-3/4 mx-auto md:max-w-sm">
+                <h1 class="text-sm mt-1 md:text-xl opacity-70">
+                  SO YOU WANT TAVEL TO
+                </h1>
+                <h2
+                  class="text-7xl my-2 font-bold ml-0 md:ml-2 md:text-8xl md:my-4"
+                >
+                  SPACE
+                </h2>
+                <p class="mt-4 text-sm opacity-70 md:text-lg">
+                  Let`s face it; if you want to go to space, you might as well
+                  genuinely go to outer space and not hover kind of on the edge
+                  of it. Well sit back, and relax because we`ll give you a truly
+                  out of this world experience!
+                </p>
+              </div>
+            </div>
+            <div
+              class="w-full flex flex-col items-center justify-center my-5 md:my-0 md:items-stretch md:w-1/2"
+            >
+              <a
+                href="./destination.html"
+                class="radius btn-lg mt-0 ml-0 bg-white flex flex-col items-center justify-center md:my-12 px-4 md:ml-20"
+              >
+                <h1 class="text-3xl opacity-50">EXPLORE</h1>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
   </body>
 </html>

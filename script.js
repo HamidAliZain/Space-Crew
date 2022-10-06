@@ -6,7 +6,7 @@ hamburger.addEventListener("click", () => {
 closeHambure.addEventListener("click", () => {
   document.getElementById("open").style.width = "0%";
 });
-// text change//
+// text destination page //
 const moon = document.getElementById("moon");
 const mars = document.getElementById("mars");
 const europa = document.getElementById("europa");

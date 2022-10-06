@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Crew</title>
+  </head>
+  <body>
+    <main>
+      <section id="crew">
+        <div class="flex flex-col justify-center">
+          <div class="flex flex-col lg:flex-row items-end mt-32">
+            <div class="w-1/2 pl-32">
+              <h1 class="text-3xl text-white">
+                <span class="opacity-50 mr-2"> 02</span> MEET YOUR CREW
+              </h1>
+              <div class="mt-32">
+                <h1 class="text-4xl opacity-50 text-white" id="crewProfessions">
+                  COMMANDER
+                </h1>
+                <h2 class="text-6xl text-white mt-5" id="crewHead">
+                  DOUGLAS HURLEY
+                </h2>
+                <p class="text-white text-md mt-12" id="crew-para">
+                  Douglas Gerald Hurley is an American engineer, former Marine
+                  Corps pilot and former NASA astronaut. He launched into space
+                  for the third time as commander of Crew Dragon Demo-2.
+                </p>
+              </div>
+
+              <div class="flex space-x-4 my-32 ml-2">
+                <button
+                  class="w-4 h-4 bg-gray-600 rounded-full focus:bg-white cursor-pointer"
+                  onclick="document.getElementById('crewImages').src='/images/image-douglas-hurley.png '"
+                  id="DOUGLAS "
+                ></button>
+                <button
+                  class="w-4 h-4 bg-gray-600 rounded-full focus:bg-white cursor-pointer"
+                  onclick="document.getElementById('crewImages').src='/images/image-mark-shuttleworth.png'"
+                  id="Mark"
+                ></button>
+                <button
+                  class="w-4 h-4 bg-gray-600 rounded-full focus:bg-white cursor-pointer"
+                  onclick="document.getElementById('crewImages').src='/images/image-victor-glover.png'"
+                  id="Vicky"
+                ></button>
+                <button
+                  class="w-4 h-4 bg-gray-600 rounded-full focus:bg-white cursor-pointer"
+                  onclick="document.getElementById('crewImages').src='/images/image-anousheh-ansari.png'"
+                  id="ANOUSHEH"
+                ></button>
+              </div>
+            </div>
+            <div class="w-1/2 flex flex-row justify-center mt-5">
+              <img
+                src="./images/image-douglas-hurley.png"
+                alt="crew"
+                id="crewImages"
+                class="w-4/5 animeCrew"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./crew.js"></script>
+  </body>
+</html>

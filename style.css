@@ -25,10 +25,18 @@ body {
     background-image: url("/images/background-destination-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-     background-position: center;
+    background-position: center;
 }
 
+#crew {
+    background-image: url("/images/background-crew-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
 
+ 
 
 
 .radius {
@@ -95,30 +103,33 @@ body {
 }
 
 @keyframes animation {
- 
- 
-     0% {
+
+
+    0% {
         width: 100%;
-        margin: 0px 0px 0px  32px;
+        margin: 0px 0px 0px 32px;
     }
+
     50% {
         width: 90%;
-        margin: 0px 0px 0px  32px;
+        margin: 0px 0px 0px 32px;
     }
-    
-    
+
+
     100% {
         width: 100%;
-        margin: 0px 0px 0px  32px;
+        margin: 0px 0px 0px 32px;
     }
 
 }
-.animate-container{
-     height: 70vh;
+
+.animate-container {
+    height: 70vh;
 }
+
 .animate {
-    width: 100%; 
-    animation: animation  2s linear infinite forwards alternate;
+    width: 100%;
+    animation: animation 2s linear infinite forwards alternate;
 }
 
 @media only screen and (max-width:769px) {
@@ -142,26 +153,34 @@ body {
         background-size: cover;
         background-position: center;
     }
- 
-@keyframes animation {
- 
- 
-    0% {
-       width: 100%;
-       margin: 0 auto;
-   }
-   50% {
-       width: 90%;
-       margin: 0 auto;
-   }
-   
-   
-   100% {
-       width: 100%;
-       margin: 0 auto;
-   }
 
-}
+    #destination {
+        background-image: url("/images/background-destination-tablet.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    @keyframes animation {
+
+
+        0% {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        50% {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+
+        100% {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+    }
 }
 
 @media only screen and (max-width:480px) {
@@ -187,7 +206,18 @@ body {
         height: 150px;
         width: 150px;
         left: 15px;
- 
+
     }
 
+    #destination {
+        background-image: url("/images/background-destination-mobile.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .animate-container {
+        height: 60vh;
+        width: 70%;
+    }
 }

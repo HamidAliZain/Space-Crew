@@ -15,7 +15,7 @@
         <div class="bg-white rounded-full">
           <img src="./images/logo.svg" alt="logo" />
         </div>
-        <div class="w-1/2 h-1 hidden bg-gray-800 -500 lg:block"></div>
+        <div class=" w-1/2 h-1 hidden bg-gray-800 lg:block"></div>
         <div
           class="hidden bg-gray-800 text-lg justify-around text-white w-1/2 py-8 lg:text-sm lg:flex lg:flex-row"
         >
@@ -60,11 +60,13 @@
                 <span class="mr-2 opacity-50 font-bold">01</span> PICK YOUR
                 DESTINATION
               </h1>
-              <div class="  flex flex-col justify-center   animate-container md:w-1/2  lg:w-3/5">
+              <div
+                class="w-1/2 flex flex-col justify-center animate-container md:w-2/5 lg:w-3/5"
+              >
                 <img
                   src="/images/image-moon.png"
                   alt="moon"
-                  class="mt-14 lg:mt-10 animate      "
+                  class="mt-14 lg:mt-10 animate"
                   id="planetImages"
                 />
               </div>
@@ -75,7 +77,7 @@
               >
                 <button
                   id="moon"
-                  class="   cursor-pointer text-white text-xl hover:border-b-4 focus:border-b-white focus:border-b-4 focus:py-0 hover:border-b-gray-500 py-4 hover:py-0"
+                  class="cursor-pointer text-white text-xl hover:border-b-4 focus:border-b-white focus:border-b-4 focus:py-0 hover:border-b-gray-500 py-4 hover:py-0"
                   onclick="document.getElementById('planetImages').src='/images/image-moon.png'"
                 >
                   MOON
@@ -102,22 +104,26 @@
                   TITAN
                 </button>
               </div>
-              <div class=" w-full mt-6 text-white text-center lg:text-left border-b-2 border-b-gray-600 pb-12 lg:w-3/4">
+              <div
+                class="w-full mt-6 text-white text-center lg:text-left border-b-2 border-b-gray-600 pb-12 lg:w-3/4"
+              >
                 <h1 class="text-7xl my-1" id="headinga">MOON</h1>
-                <p id="para" class="text-lg pr-0 mt-12 lg:pr-8  ">
+                <p id="para" class="text-lg pr-0 mt-12 lg:pr-8">
                   See our planet as you`ve never seen it before. A perfect
                   relaxing trip away to help regain perspective and come back
                   refreshed. While you`re there, take in some history by
                   visiting the Luna 2 and Apollo 11 landing sites.
                 </p>
               </div>
-              <div class="flex flex-row justify-between items-center text-center lg:text-left ">
-                <div class="  w-1/2 py-5">
-                  <h1 class="text-md opacity-50 text-white"  >AVG.DISTANCE</h1>
+              <div
+                class="flex flex-row justify-between items-center text-center lg:text-left"
+              >
+                <div class="w-1/2 py-5">
+                  <h1 class="text-md opacity-80 text-white">AVG.DISTANCE</h1>
                   <h1 class="text-2xl text-white" id="kilometer">384,400 KM</h1>
                 </div>
-                <div class="  w-1/2 py-5">
-                  <h1 class="text-md opacity-50 text-white" >
+                <div class="w-1/2 py-5">
+                  <h1 class="text-md opacity-80 text-white">
                     EST. TRAVEL TIME
                   </h1>
                   <h1 class="text-2xl text-white" id="days">3 Days</h1>

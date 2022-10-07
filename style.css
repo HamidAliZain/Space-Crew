@@ -11,6 +11,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Bellefair', serif;
+
 }
 
 #home {
@@ -36,7 +38,21 @@ body {
     height: 100%;
 }
 
- 
+#tecnology {
+    background-image: url("/images/background-technology-desktop.jpg ");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+#technoImages {
+    background-image: url('/images/image-launch-vehicle-portrait.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+}
 
 
 .radius {
@@ -61,7 +77,7 @@ body {
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     display: block;
     transition: 0.3s;
 }
@@ -161,6 +177,26 @@ body {
         background-position: center;
     }
 
+    #crew {
+        background-image: url("/images/background-crew-tablet.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+    }
+
+    #tecnology {
+        background-image: url("/images/background-technology-tablet.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+    }
+
+    .spin {
+        animation-iteration-count: 2;
+    }
+
     @keyframes animation {
 
 
@@ -214,6 +250,22 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+    }
+
+    #crew {
+        background-image: url("/images/background-crew-mobile.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+    }
+
+    #tecnology {
+        background-image: url("/images/background-technology-mobile.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
     }
 
     .animate-container {

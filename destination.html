@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="/css/main.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
     <title>Destination</title>
   </head>
   <body>
@@ -12,19 +18,25 @@
       <nav
         class="absolute flex flex-row top-5 w-full justify-between items-center px-4"
       >
-        <div class="bg-white rounded-full">
+        <div class="bg-white rounded-full animate-spin">
           <img src="./images/logo.svg" alt="logo" />
         </div>
-        <div class=" w-1/2 h-1 hidden bg-gray-800 lg:block"></div>
+        <div class="w-1/2 h-1 hidden bg-gray-800 lg:block"></div>
         <div
-          class="hidden bg-gray-800 text-lg justify-around text-white w-1/2 py-8 lg:text-sm lg:flex lg:flex-row"
+          class="hidden justify-around backdrop-blur-2xl text-white w-1/2 py-8 md:text-sm lg:flex md:flex-row"
         >
-          <a href="./index.html"><span class="font-bold"> 00</span> Home</a>
-          <a href="./destination.html"
+          <a href="./index.html" class="text-xl"
+            ><span class="font-bold"> 00</span> Home</a
+          >
+          <a href="./destination.html" class="text-xl"
             ><span class="font-bold"> 01</span> Destination</a
           >
-          <a href="#"><span class="font-bold"> 02</span> Crew</a>
-          <a href="#"><span class="font-bold"> 03</span> Technology</a>
+          <a href="/crew.html" class="text-lg"
+            ><span class="font-bold"> 02</span> Crew</a
+          >
+          <a href="/technologies.html" class="text-lg"
+            ><span class="font-bold"> 03</span> Technology</a
+          >
         </div>
         <img
           src="./images/icon-hamburger.svg"
@@ -36,44 +48,45 @@
     </header>
     <main>
       <section>
-        <div class="sidenav backdrop-blur-3xl" id="open">
-          <img
-            src="./images/icon-close.svg"
-            alt="closeHamburger"
-            id="closeHamburger"
-            class="close w-12 top-5 absolute right-12"
-          />
-          <div class="flex flex-col px-4 py-5 space-y-12 text-white">
-            <a href="./index.html"><span class="font-bold"> 00</span> Home</a>
-            <a href="./destination.html"
-              ><span class="font-bold"> 01</span> Destination</a
-            >
-            <a href="#"><span class="font-bold"> 02</span> Crew</a>
-            <a href="#"><span class="font-bold"> 03</span> Technology</a>
+        <div id="destination" class="flex flex-col justify-center  ">
+          <div class="sidenav backdrop-blur-3xl" id="open">
+            <img
+              src="./images/icon-close.svg"
+              alt="closeHamburger"
+              id="closeHamburger"
+              class="close w-12 top-5 absolute right-12"
+            />
+            <div class="flex flex-col px-4 py-5 space-y-12 text-white">
+              <a href="./index.html"><span class="font-bold"> 00</span> Home</a>
+              <a href="./destination.html"
+                ><span class="font-bold"> 01</span> Destination</a
+              >
+              <a href="./crew.html"><span class="font-bold"> 02</span> Crew</a>
+              <a href="./technologies.html"
+                ><span class="font-bold"> 03</span> Technology</a
+              >
+            </div>
           </div>
-        </div>
-
-        <div id="destination" class="flex flex-col justify-center h-full">
+          <h1 class="text-2xl text-white ml-6 mt-32 md:text-3xl">
+            <span class="mr-2 opacity-50 font-bold">01</span> PICK YOUR
+            DESTINATION
+          </h1>
           <div class="flex flex-col items-center lg:flex-row justify-center">
-            <div class="text-center w-full flex flex-col lg:w-1/2 items-center">
-              <h1 class="text-2xl text-white ml-6 mt-32 md:text-3xl">
-                <span class="mr-2 opacity-50 font-bold">01</span> PICK YOUR
-                DESTINATION
-              </h1>
+            <div class="w-full flex flex-col lg:w-1/2 items-center">
               <div
-                class="w-1/2 flex flex-col justify-center animate-container md:w-2/5 lg:w-3/5"
+                class="w-1/2 flex flex-col justify-center animate-container   md:w-2/5 lg:w-3/5"
               >
                 <img
                   src="/images/image-moon.png"
                   alt="moon"
-                  class="mt-14 lg:mt-10 animate"
+                  class="mt-14 animate"
                   id="planetImages"
                 />
               </div>
             </div>
             <div class="w-full flex flex-col lg:w-1/2">
               <div
-                class="flex flex-row justify-center space-x-6 mt-12 ml-2 mb-4 lg:mt-56 lg:justify-start"
+                class="flex flex-row justify-center space-x-6 mt-12 ml-2 mb-4   lg:justify-start"
               >
                 <button
                   id="moon"
@@ -134,6 +147,6 @@
         </div>
       </section>
     </main>
-    <script src="script.js"></script>
+    <script src="destination.js"></script>
   </body>
 </html>

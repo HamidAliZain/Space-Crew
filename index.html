@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/main.css" />
     <title>space crew</title>
   </head>
@@ -12,24 +18,30 @@
       <nav
         class="absolute flex flex-row top-5 w-full justify-between items-center px-4"
       >
-        <div class="bg-white rounded-full">
+        <div class="bg-white rounded-full animate-spin">
           <img src="./images/logo.svg" alt="logo" />
         </div>
-        <div class="w-1/2 h-1 hidden bg-gray-800 md:block"></div>
+        <div class="w-1/2 h-1 hidden bg-gray-800 lg:block"></div>
         <div
-          class="hidden text-md justify-around backdrop-blur-2xl text-white w-1/2 py-8 md:text-sm md:flex md:flex-row"
+          class="hidden justify-around backdrop-blur-2xl text-white w-1/2 py-8 md:text-sm lg:flex md:flex-row"
         >
-          <a href="./index.html"><span class="font-bold"> 00</span> Home</a>
-          <a href="./destination.html"
+          <a href="./index.html" class="text-xl"
+            ><span class="font-bold"> 00</span> Home</a
+          >
+          <a href="./destination.html" class="text-xl"
             ><span class="font-bold"> 01</span> Destination</a
           >
-          <a href="#"><span class="font-bold"> 02</span> Crew</a>
-          <a href="#"><span class="font-bold"> 03</span> Technology</a>
+          <a href="./crew.html" class="text-lg"
+            ><span class="font-bold"> 02</span> Crew</a
+          >
+          <a href="./technologies.html" class="text-lg"
+            ><span class="font-bold"> 03</span> Technology</a
+          >
         </div>
         <img
           src="./images/icon-hamburger.svg"
           alt="icon-hamburger"
-          class="block md:hidden"
+          class="block lg:hidden"
           id="hamburger"
         />
       </nav>
@@ -48,8 +60,10 @@
             <a href="./destination.html"
               ><span class="font-bold"> 01</span> Destination</a
             >
-            <a href="#"><span class="font-bold"> 02</span> Crew</a>
-            <a href="#"><span class="font-bold"> 03</span> Technology</a>
+            <a href="./crew.html"><span class="font-bold"> 02</span> Crew</a>
+            <a href="./technologies.html"
+              ><span class="font-bold"> 03</span> Technology</a
+            >
           </div>
         </div>
 
